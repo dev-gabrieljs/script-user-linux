@@ -1,4 +1,4 @@
-
+# Scripts de automação
 
 Este projeto fornece um script Bash para automatizar o provisionamento de infraestrutura em sistemas Linux. O script cria diretórios, grupos e usuários, define permissões de acesso e limpa o ambiente antes de cada execução, garantindo consistência e repetibilidade.
 
