@@ -38,14 +38,19 @@ Execute o script com permissões de superusuário:
 sudo ./provisionamento.sh
 ````
 
-### Explicações Adicionais
+## Definições
 
-- **Nome para o Projeto**: O nome escolhido deve refletir o propósito do projeto, ou seja, provisionamento automatizado de infraestrutura com Bash.
-- **Descrição**: Uma breve introdução sobre o projeto e sua importância no contexto de IaC.
-- **Funcionalidades**: Detalhes sobre o que o script faz e quais problemas ele resolve.
-- **Estrutura do Projeto**: Explicação sobre os arquivos importantes e diretórios no repositório.
-- **Instruções de Uso**: Passos claros para o usuário clonar, tornar o script executável e rodá-lo.
-- **Log de Operações**: Detalhe sobre o log para transparência e depuração.
-- **Contribuições e Licença**: Instruções padrão para colaboração e informações de licença.
+- **Excluir diretórios, arquivos, grupos e usuários criados anteriormente**: Antes de criar novos diretórios, arquivos, grupos e usuários, o script deve remover todos os que foram criados anteriormente, garantindo um ambiente limpo.
 
-Espero que essas sugestões atendam às suas necessidades! Se precisar de ajustes, é só avisar.
+- **Todo provisionamento deve ser feito em um arquivo do tipo Bash Script**: O provisionamento da infraestrutura deve ser realizado através de um único script Bash, automatizando todas as tarefas.
+
+- **O dono de todos os diretórios criados será o usuário root**: Após a criação, todos os diretórios devem ter o usuário `root` como proprietário para assegurar o controle administrativo.
+
+- **Todos os usuários terão permissão total dentro do diretório publico**: O diretório `/publico` deve ter permissões abertas (777), permitindo que todos os usuários possam ler, escrever e executar arquivos neste diretório.
+
+- **Os usuários de cada grupo terão permissão total dentro de seu respectivo diretório**: Cada grupo de usuários deve ter permissões totais (770) dentro do diretório correspondente ao seu grupo, permitindo que apenas usuários do grupo tenham acesso completo.
+
+- **Os usuários não poderão ter permissão de leitura, escrita e execução em diretórios de departamentos que eles não pertencem**: Deve-se configurar permissões de forma que usuários de outros grupos não possam acessar, ler, modificar ou executar arquivos em diretórios de departamentos aos quais não pertencem.
+
+
+
