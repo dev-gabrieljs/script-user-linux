@@ -26,7 +26,26 @@ A infraestrutura como código (IaC) é uma prática essencial no DevOps que perm
 
 ## Como Usar
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seuusuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+
+1.**Torne o script executável**:
+ ```bash
+
+sudo chmod +x provisionamento.sh
+````
+Execute o script com permissões de superusuário:
+```bash
+
+sudo ./provisionamento.sh
+````
+
+### Explicações Adicionais
+
+- **Nome para o Projeto**: O nome escolhido deve refletir o propósito do projeto, ou seja, provisionamento automatizado de infraestrutura com Bash.
+- **Descrição**: Uma breve introdução sobre o projeto e sua importância no contexto de IaC.
+- **Funcionalidades**: Detalhes sobre o que o script faz e quais problemas ele resolve.
+- **Estrutura do Projeto**: Explicação sobre os arquivos importantes e diretórios no repositório.
+- **Instruções de Uso**: Passos claros para o usuário clonar, tornar o script executável e rodá-lo.
+- **Log de Operações**: Detalhe sobre o log para transparência e depuração.
+- **Contribuições e Licença**: Instruções padrão para colaboração e informações de licença.
+
+Espero que essas sugestões atendam às suas necessidades! Se precisar de ajustes, é só avisar.
